@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/bootstrap/js/dist/carousel.js"></script>
+
+    <style>
+      .footer {
+        background: #152f4f;
+        color: white;
+
+        .links {
+          ul {
+            list-style-type: none;
+          }
+          li a {
+            color: white;
+            transition: color 0.2s;
+            &:hover {
+              text-decoration: none;
+              color: #4180cb;
+            }
+          }
+        }
+        .about-company {
+          i {
+            font-size: 25px;
+          }
+          a {
+            color: white;
+            transition: color 0.2s;
+            &:hover {
+              color: #4180cb;
+            }
+          }
+        }
+        .location {
+          i {
+            font-size: 18px;
+          }
+        }
+        .copyright p {
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+      }
+      .card-text{
+        overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid bg-body-tertiary">
+      <nav class="container navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://seeklogo.com/images/C/corporate-company-logo-749CEE6ADC-seeklogo.com.png"
+              alt="logo"
+              style="width: 50px; height: 50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="container mt-3">
+        <section id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="https://blog.goway.com/globetrotting/wp-content/uploads/2018/08/Colourful-sunrise-in-Angkor-Wat-Siem-Reap-Cambodia-_679734163.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://deih43ym53wif.cloudfront.net/large_angkor-wat-south-gate-shutterstock_1430690234_2ab24d34fe.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.getyourguide.com/img/tour/615f8cd68a337.jpeg/148.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+      <section class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mt-3">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/53e118d6-58e3-4ec1-b40c-ef44f09c441e.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">ជជែកគ្នាលេងអំពី Web 4.0</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/779a9824-0e29-44ff-9f4c-922d78f04b1f.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">តើអ្វីទៅជា Cybersecurity</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/eec0362f-380e-40f5-8799-56ca9b8cafb9.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">តើអ្វីទៅជា WEB 3.0?</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/e391212d-aac5-460c-bd17-f95f468e4408.PNG"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Top Interesting Facts About C++</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/53e118d6-58e3-4ec1-b40c-ef44f09c441e.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">ជជែកគ្នាលេងអំពី Web 4.0</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/779a9824-0e29-44ff-9f4c-922d78f04b1f.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">តើអ្វីទៅជា Cybersecurity</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/eec0362f-380e-40f5-8799-56ca9b8cafb9.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">តើអ្វីទៅជា WEB 3.0?</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://api.istad.co/media/image/e391212d-aac5-460c-bd17-f95f468e4408.PNG"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Top Interesting Facts About C++</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5 pt-5 pb-5 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 about-company">
+            <a class="navbar-brand" href="#">
+                <img
+                  src="https://seeklogo.com/images/C/corporate-company-logo-749CEE6ADC-seeklogo.com.png"
+                  alt="logo"
+                  style="width: 50px; height: 50px"
+                />
+              </a>
+            <h5>W3 School</h5>
+            <p class="pr-5 text-white-50">
+                W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
+                Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness
+                of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+            </p>
+            <p>
+              <a href="#"><i class="fa fa-facebook-square mr-1"></i></a
+              ><a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </p>
+          </div>
+          <div class="col-lg-3 col-xs-12 links">
+            <h4 class="mt-lg-0 mt-sm-3">LINKS</h4>
+            <ul class="m-0 p-0">
+                <li><a href="">HTML Tutorial</a></li> 
+                <li><a href="">CSS Tutorial</a></li> 
+                <li><a href="">JavaScript Tutorial</a></li> 
+                <li><a href="">How To Tutorial</a></li> 
+                <li><a href=""></a>Python Tutorial</li> 
+                <li><a href=""></a>Bootstrap Tutorial</li> 
+                <li><a href="">PHP Tutorial</a></li> 
+                <li><a href="">Java Tutorial</a></li> 
+                <li><a href="">C++ Tutorial</a></li> 
+                <li><a href=""> W3.CSS Tutorial</a></li> jQuery Tutorial
+            </ul>
+          </div>
+          <div class="col-lg-4 col-xs-12 location">
+            <h4 class="mt-lg-0 mt-sm-4">LOCATION</h4>
+            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+            <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+            <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col copyright">
+            <p class="">
+              <small class="text-white-50">© 2024. All Rights Reserved.</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
